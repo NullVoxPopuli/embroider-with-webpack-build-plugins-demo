@@ -6,7 +6,7 @@ import config from 'embroider-with-webpack-build-plugins-demo/config/environment
 import * as info from '~build/package';
 import * as meta from '~build/meta';
 
-console.log({ info, meta });
+console.log(JSON.stringify({ info, meta }, null, 2));
 
 export default class App extends Application {
   modulePrefix = config.modulePrefix;
